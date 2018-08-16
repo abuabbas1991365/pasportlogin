@@ -12,7 +12,7 @@ var passport=require('passport');
 var LocalStrategy=require('passport-local').Strategy; 
 var mongo=require('mongodb'); 
 var mongoose=require('mongoose');
-mongoose.connect('mongodb://main:main123@ds147011.mlab.com:47011/demodatabse');
+mongoose.connect('mongodb://main:main123@ds147011.mlab.com:47011/demodatabse',{ useNewUrlParser: true });
 var db =mongoose.connection;
 
 var app =express();
